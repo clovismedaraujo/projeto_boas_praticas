@@ -44,18 +44,15 @@ Instruções de Compilação
 
 Clone o Repositório: Abra seu terminal/prompt de comando e clone o projeto:
 
-Bash
 
 git clone https://github.com/clovismedaraujo/projeto_boas_praticas.git
 cd projeto_boas_praticas
+
 Navegue para a Raiz do Pacote: Entre no diretório onde estão os arquivos .java:
 
-Bash
 
 cd src/projeto_boas_praticas
 Compile os Arquivos: Execute o comando javac para compilar todas as classes:
-
-Bash
 
 javac *.java
 Isso gerará os arquivos .class correspondentes no mesmo diretório.
@@ -65,13 +62,11 @@ Após a compilação, o sistema pode ser executado a partir da classe principal 
 
 Garanta a Posição no Diretório: Você deve estar no diretório que contém a pasta principal do pacote (src se for um IDE, ou a pasta do projeto se for via terminal). A maneira mais simples é executar a partir do nível superior onde a pasta projeto_boas_praticas está:
 
-Bash
 
 # Se você ainda estiver em 'src/projeto_boas_praticas', volte para 'src'
 cd ../ 
 Execute a Classe Principal: Utilize o comando java, especificando a classe que contém o método main (incluindo o nome do pacote):
 
-Bash
 
 java projeto_boas_praticas.SistemaBancario
 O resultado será a execução da simulação de operações bancárias definida no método main, exibindo o fluxo e o relatório consolidado no console.
