@@ -1,72 +1,85 @@
-Este projeto foi desenvolvido como um exercício prático focado na aplicação de Boas Práticas de Programação e Orientação a Objetos (OO) em Java.
 
-Ele fornece funcionalidades básicas de um banco, como cadastro de clientes e contas, operações financeiras (depósito, saque, transferência) e relatórios de consolidação.
 
-👥 Integrantes da Equipe
-Clóvis Luan Medeiros de Araújo 
+Este projeto foi desenvolvido como um exercício prático focado na aplicação de **Boas Práticas de Programação** e **Orientação a Objetos (OO)** em Java. Ele simula funcionalidades básicas de um banco, como cadastro de clientes e contas, operações financeiras e relatórios.
 
+### 👥 Integrantes da Equipe
+
+Clóvis Luan Medeiros de Araújo
 Matheus de Amorim Santana
 
 
+---
 
-📝 Sobre o Sistema
-O Sistema Bancário Simples é uma aplicação de console (linha de comando) construída em Java.
+### 📝 Sobre o Sistema
 
-O código é estruturado em diferentes classes (Cliente, Conta, GerenciadorBancario, etc.) para simular a lógica de um banco.
+O Sistema é uma aplicação de console construída em Java que demonstra conceitos de **Herança**, **Abstração** e **Encapsulamento** para gerenciar contas bancárias.
 
-Arquitetura e Componentes Chave:
+#### **Funcionalidades Chave**
 
-Cliente: Representa os dados básicos de um correntista (Nome e CPF).
+* **Cadastro:** Clientes e Contas.
+* **Tipos de Conta:** Conta Corrente e Conta Poupança.
+* **Operações:** Depósito, Saque e Transferência entre contas.
+* **Lógica Específica:** Aplicação de rendimento para Contas Poupança.
+* **Gerenciamento:** Listagem de contas ordenadas por saldo e geração de Relatório Consolidado.
 
-Conta (Classe Abstrata): Define a estrutura e as operações comuns (sacar, depositar, saldo) para todos os tipos de conta.
+#### **Estrutura de Classes (POO)**
 
-ContaCorrente e ContaPoupanca: Herdam de Conta e implementam lógicas específicas (ex: ContaPoupanca possui o método aplicarRendimento).
+| Classe | Descrição | Conceito Principal |
+| :--- | :--- | :--- |
+| `Conta` | Classe Abstrata, define operações comuns (depositar, sacar). | Abstração |
+| `ContaCorrente` | Implementa a conta corrente. | Herança |
+| `ContaPoupanca` | Implementa a conta poupança e inclui o método `aplicarRendimento`. | Herança e Polimorfismo |
+| `Cliente` | Contém dados básicos do cliente (nome e CPF). | Encapsulamento |
+| `GerenciadorBancario` | Gerencia coleções de contas e clientes, executa lógicas de negócio. | Controle/Serviço |
+| `SistemaBancario` | Classe principal (`main`), executa a simulação. | Inicialização |
 
-GerenciadorBancario: Gerencia as coleções de clientes e contas, e executa lógicas de alto nível (cadastro, busca, transferência, relatórios).
+---
 
-SistemaBancario (Classe Principal): Contém o método main e simula a execução das funcionalidades do banco.
+### ⚙️ Como Compilar o Sistema
 
-Tecnologias Utilizadas:
+O projeto é construído em Java puro e requer apenas o JDK para compilação e execução.
 
-Linguagem de Programação: Java
+#### **Pré-requisitos**
 
-Paradigma: Programação Orientada a Objetos (POO)
+* **Java Development Kit (JDK)**: Versão 8 ou superior.
+* **Git**
 
-Estrutura de Dados: List (ArrayList) para armazenar clientes e contas.
+#### **Instruções de Compilação (Terminal)**
 
-⚙️ Como Compilar o Sistema
-Para compilar e executar o projeto, é necessário ter o ambiente Java configurado em sua máquina.
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [https://github.com/clovismedaraujo/projeto_boas_praticas.git](https://github.com/clovismedaraujo/projeto_boas_praticas.git)
+    cd projeto_boas_praticas
+    ```
 
-Pré-requisitos
-Java Development Kit (JDK): Versão 8 ou superior.
+2.  **Compile os Arquivos:**
+    O código está dentro do pacote `projeto_boas_praticas`. Você deve compilar a partir do diretório que contém a pasta `src`.
+    ```bash
+    # Se você estiver na raiz do projeto, navegue para o diretório "src"
+    cd src
+    
+    # Execute a compilação de todas as classes do pacote
+    javac projeto_boas_praticas/*.java
+    ```
+    *Isso gerará os arquivos `.class` dentro da pasta `projeto_boas_praticas` (dentro de `src`).*
 
-Instruções de Compilação
+---
 
-Clone o Repositório: Abra seu terminal/prompt de comando e clone o projeto:
+### ▶️ Como Executar o Sistema
 
+Após a compilação, o sistema é executado chamando a classe principal (`SistemaBancario`) através do comando `java`, especificando o pacote.
 
-git clone https://github.com/clovismedaraujo/projeto_boas_praticas.git
-cd projeto_boas_praticas
+1.  **Navegue para o Diretório de Execução:**
+    Certifique-se de que você está no diretório `src` (onde a pasta do pacote `projeto_boas_praticas` está visível).
+    ```bash
+    # Se você estiver em 'src/projeto_boas_praticas', volte um nível para 'src'
+    cd ..
+    ```
 
-Navegue para a Raiz do Pacote: Entre no diretório onde estão os arquivos .java:
+2.  **Execute a Classe Principal:**
+    Execute a simulação do sistema:
+    ```bash
+    java projeto_boas_praticas.SistemaBancario
+    ```
 
-
-cd src/projeto_boas_praticas
-Compile os Arquivos: Execute o comando javac para compilar todas as classes:
-
-javac *.java
-Isso gerará os arquivos .class correspondentes no mesmo diretório.
-
-▶️ Como Executar o Sistema
-Após a compilação, o sistema pode ser executado a partir da classe principal SistemaBancario.
-
-Garanta a Posição no Diretório: Você deve estar no diretório que contém a pasta principal do pacote (src se for um IDE, ou a pasta do projeto se for via terminal). A maneira mais simples é executar a partir do nível superior onde a pasta projeto_boas_praticas está:
-
-
- Se você ainda estiver em 'src/projeto_boas_praticas', volte para 'src'
-cd ../ 
-Execute a Classe Principal: Utilize o comando java, especificando a classe que contém o método main (incluindo o nome do pacote):
-
-
-java projeto_boas_praticas.SistemaBancario
-O resultado será a execução da simulação de operações bancárias definida no método main, exibindo o fluxo e o relatório consolidado no console.
+O sistema irá rodar a simulação de cadastro, operações e relatórios, exibindo os resultados diretamente no console.
