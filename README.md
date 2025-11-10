@@ -48,7 +48,7 @@ O projeto é construído em Java puro e requer apenas o JDK para compilação e 
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [https://github.com/clovismedaraujo/projeto_boas_praticas.git](https://github.com/clovismedaraujo/projeto_boas_praticas.git)
+    git clone https://github.com/clovismedaraujo/projeto_boas_praticas.git
     cd projeto_boas_praticas
     ```
 
