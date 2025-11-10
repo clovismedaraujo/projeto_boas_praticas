@@ -4,8 +4,8 @@ Este projeto foi desenvolvido como um exercício prático focado na aplicação 
 
 ### 👥 Integrantes da Equipe
 
-Clóvis Luan Medeiros de Araújo
-Matheus de Amorim Santana
+* **Clóvis Luan Medeiros de Araújo** 
+* **Matheus de Amorim Santana** 
 
 
 ---
