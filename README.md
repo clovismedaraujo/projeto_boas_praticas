@@ -63,7 +63,7 @@ Após a compilação, o sistema pode ser executado a partir da classe principal 
 Garanta a Posição no Diretório: Você deve estar no diretório que contém a pasta principal do pacote (src se for um IDE, ou a pasta do projeto se for via terminal). A maneira mais simples é executar a partir do nível superior onde a pasta projeto_boas_praticas está:
 
 
-# Se você ainda estiver em 'src/projeto_boas_praticas', volte para 'src'
+ Se você ainda estiver em 'src/projeto_boas_praticas', volte para 'src'
 cd ../ 
 Execute a Classe Principal: Utilize o comando java, especificando a classe que contém o método main (incluindo o nome do pacote):
 
